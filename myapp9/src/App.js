@@ -1,6 +1,6 @@
 import React, {createContext, useContext} from 'react';
 import './style.css';
-const themeDefault = {border : '10px solid blue'};
+const themeDefault = {border : '10px dotted blue'};
 const themeContext = createContext(themeDefault);
 
 
