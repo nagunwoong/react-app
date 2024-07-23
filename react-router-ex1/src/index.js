@@ -2,8 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {Route, Routes, NavLink, BrowserRouter,useParams } from 'react-router-dom';
+import {Route, Routes, NavLink, BrowserRouter, useParams } from 'react-router-dom';
+import styled from 'styled-components';
 
+const SimpleButton = styled.button`
+color: black;
+background-color: green;
+`;
 
 
 function Home() {
@@ -81,7 +86,7 @@ function Contact() {
 function App() {
   return(
     <div>
-      <h1>자기소개 페이지</h1>
+      <SimpleButton><h1>자기소개 페이지</h1></SimpleButton>
     <ul>
       <li><NavLink to='/'>이름</NavLink></li>
       <li><NavLink to='/topics'>주특기</NavLink></li>
